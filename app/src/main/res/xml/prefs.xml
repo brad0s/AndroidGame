@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="Toggle Background Music"
+        android:defaultValue="true"
+        android:summaryOff="Music is off"
+        android:summaryOn="Music is on"
+        android:key="music_option" />
+    <CheckBoxPreference
+        android:title="Toggle background image"
+        android:defaultValue="true"
+        android:summaryOff="Home background image"
+        android:summaryOn="Portal background image"
+        android:key="background_image" />
+    <ListPreference
+        android:title="Dance Speed"
+        android:summary="How fast should the meeseeks dance?"
+        android:key="dance_speed"
+        android:entries="@array/speed_labels"
+        android:entryValues="@array/speed_values"
+        android:defaultValue="0" />
+    <ListPreference
+        android:title="Velocity Speed"
+        android:summary="How fast should the meeseeks move?"
+        android:key="velocity_speed"
+        android:entries="@array/velocity_labels"
+        android:entryValues="@array/velocity_speed"
+        />
+    <ListPreference
+        android:title="Game Style"
+        android:summary="Choose which game style you want to play!"
+        android:key="gameStyle_key"
+        android:entries="@array/gameStyle_labels"
+        android:entryValues="@array/gameStyle_values"
+        android:defaultValue="0"
+        ></ListPreference>
+</PreferenceScreen>
